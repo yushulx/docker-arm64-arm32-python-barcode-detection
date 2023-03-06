@@ -16,6 +16,13 @@ docker run --platform linux/arm64 -it --rm -v ${pwd}:/usr/src/myapp -w /usr/src/
 docker run --platform linux/arm/v7 -it --rm -v ${pwd}:/usr/src/myapp -w /usr/src/myapp <IMAGE-NAME> python pillow_test.py
 ```
 
+**Try the Pre-built Images**
+
+```bash
+docker run --platform linux/arm64 -it --rm -v ${pwd}:/usr/src/myapp -w /usr/src/myapp yushulx/dbr-arm64:1.0 python pillow_test.py
+docker run --platform linux/arm/v7 -it --rm -v ${pwd}:/usr/src/myapp -w /usr/src/myapp yushulx/dbr-arm32:1.0 python pillow_test.py
+```
+
 ## Raspberry Pi Emulator
 Try [dockerpi](https://github.com/lukechilds/dockerpi) to evaluate the Python barcode SDK performance on Raspberry Pi.
 
